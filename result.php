@@ -31,12 +31,15 @@ function sortIntervals(Array $tab):Array{
 function foo(Array $tab):Array{
 	
 	$finalArray = [];
+
 	for( $i=0; $i< count($tab)-1; $i++){
 		var_dump("i: ".$i);
 		$tempInterval = $tab[$i];
 		for($j=$i+1;$j<count($tab); $j++){
 			var_dump("j: ".$j);
+            //if intervals don't intersect
 			if($tempInterval[1]<$tab[$j][0]){
+                // to include the last element of array
 				if($j==count($tab)-1){
 					array_push($finalArray, $tempInterval,$tab[$j]);
 					break 2;
