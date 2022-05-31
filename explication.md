@@ -14,3 +14,6 @@ Voir le fichier result.php
 Le reverse engineering plus l'implémentation a pris 1h30 environ.
 
 PS: il a été possible de le faire en moins de temps si on se basait sur les résultats fournis dans les forks du projet.
+
+
+Merci pour votre temps! ;) 
